@@ -32,6 +32,17 @@ Scott / AutoJanitor builds open systems where vintage silicon still matters.
 - Build public infrastructure for agents, creators, and weird machines
 - Document ports and experiments for POWER8, PowerPC, SPARC, N64, and other neglected platforms
 
+## Merged Upstream Work
+
+Recent accepted external contributions:
+
+- [trajectly/trajectly](https://github.com/trajectly/trajectly): merged focused CLI and report test coverage improvements ([#54](https://github.com/trajectly/trajectly/pull/54), [#55](https://github.com/trajectly/trajectly/pull/55))
+- [danifunker/rusty-backup](https://github.com/danifunker/rusty-backup): merged a PowerPC Tiger port for G3/G4/G5 Macs ([#13](https://github.com/danifunker/rusty-backup/pull/13))
+- MCP registries: merged RustChain MCP listings into [TensorBlock/awesome-mcp-servers](https://github.com/TensorBlock/awesome-mcp-servers/pull/154), [AlexMili/Awesome-MCP](https://github.com/AlexMili/Awesome-MCP/pull/36), and [toolsdk-ai/toolsdk-mcp-registry](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/191)
+- [command-tab/awesome-n64-development](https://github.com/command-tab/awesome-n64-development): merged Legend of Elya listing ([#63](https://github.com/command-tab/awesome-n64-development/pull/63))
+- [xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference): merged POWER8 inference optimization listing ([#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159))
+- Full list: [external-pr-portfolio.md](./external-pr-portfolio.md)
+
 ## Featured Weirdness
 
 - [claude-code-power8](https://github.com/Scottcjn/claude-code-power8) - Claude Code CLI ported to IBM POWER8 / ppc64le
