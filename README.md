@@ -6,7 +6,7 @@ Scott / AutoJanitor builds open systems where vintage silicon still matters.
 
 **Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects.
 
-[Website](https://rustchain.org) • [BoTTube](https://bottube.ai) • [RustChain](https://github.com/Scottcjn/Rustchain) • [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
+[Website](https://rustchain.org) | [BoTTube](https://bottube.ai) | [RustChain](https://github.com/Scottcjn/Rustchain) | [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
 
 ![GitHub followers](https://img.shields.io/github/followers/Scottcjn?style=flat-square&label=followers)
 ![RustChain stars](https://img.shields.io/github/stars/Scottcjn/Rustchain?style=flat-square&label=RustChain)
@@ -32,34 +32,38 @@ Scott / AutoJanitor builds open systems where vintage silicon still matters.
 - Build public infrastructure for agents, creators, and weird machines
 - Document ports and experiments for POWER8, PowerPC, SPARC, N64, and other neglected platforms
 
-## Cryptographic & Security Contributions
+## Cryptographic and Security Contributions
 
-Merged security patches in libraries used by millions of systems worldwide:
+Security patches and performance work in libraries used by millions of systems worldwide:
 
 | Library | PR | Fix | Status |
 | --- | --- | --- | --- |
-| **OpenSSL** | [#30437](https://github.com/openssl/openssl/pull/30437) | Integer truncation in PowerPC AES-GCM (`int` → `size_t`) | **Merged to master + 5 release branches** |
-| **OpenSSL** | [#30452](https://github.com/openssl/openssl/pull/30452) | Silent decrypt error swallow in PPC GCM path | In review |
-| **wolfSSL** | [#9932](https://github.com/wolfSSL/wolfssl/pull/9932) | POWER8 hardware AES via `vcipher`/`vcipherlast` (13-20x faster) | In review (CLA signed) |
-| **NSA Ghidra** | [#9036](https://github.com/NationalSecurityAgency/ghidra/pull/9036) | e200 VLE PowerPC language support for reverse engineering | In review |
+| **OpenSSL** | [#30437](https://github.com/openssl/openssl/pull/30437) | Integer truncation in PowerPC AES-GCM (`int` to `size_t`) | **Merged to master + 5 release branches** |
 | **libdeflate** | [#448](https://github.com/ebiggers/libdeflate/pull/448) | Enable UNALIGNED_ACCESS_IS_FAST for all PowerPC variants | **Merged** |
-| **vLLM** | [#35674](https://github.com/vllm-project/vllm/pull/35674) | IBM POWER8 (ppc64le) CPU backend support | In review |
-| **Anthropic SDK** | [#1247](https://github.com/anthropics/anthropic-sdk-python/pull/1247) | Skip no-op recursive transform for types without PropertyInfo | In review |
+| **CPython** | [#146118](https://github.com/python/cpython/pull/146118) | BLAKE2 SIMD128 on POWER8 via VSX intrinsics | In review (65K-star repo) |
+| **curl** | [#20984](https://github.com/curl/curl/pull/20984) | SHA-512/256 big-endian optimization | In review (36K-star repo) |
+| **NSA Ghidra** | [#9036](https://github.com/NationalSecurityAgency/ghidra/pull/9036) | e200 VLE PowerPC language support for reverse engineering | In review (53K-star repo) |
+| **vLLM** | [#35674](https://github.com/vllm-project/vllm/pull/35674) | IBM POWER8 (ppc64le) CPU backend support | In review (30K-star repo) |
+| **wolfSSL** | [#9932](https://github.com/wolfSSL/wolfssl/pull/9932) | POWER8 hardware AES via `vcipher`/`vcipherlast` (13-20x faster) | In review (CLA signed) |
 
-Also: [US Patent 10,579,974](https://patents.google.com/patent/US10579974) — rapid transaction settlements in distributed digital asset networks.
+Also: [US Patent 10,579,974](https://patents.google.com/patent/US10579974) -- rapid transaction settlements in distributed digital asset networks.
 
 ## Merged Upstream Work
 
-Recent accepted external contributions:
+30+ PRs merged into external repositories. Highlights:
 
-- **[openssl/openssl](https://github.com/openssl/openssl)**: merged PowerPC AES-GCM integer truncation fix to all supported branches ([#30437](https://github.com/openssl/openssl/pull/30437))
-- **[ebiggers/libdeflate](https://github.com/ebiggers/libdeflate)**: merged PowerPC unaligned access optimization ([#448](https://github.com/ebiggers/libdeflate/pull/448))
-- **[ahmet/awesome-web3](https://github.com/ahmet/awesome-web3)**: merged RustChain listing ([#626](https://github.com/ahmet/awesome-web3/pull/626))
-- [up-for-grabs/up-for-grabs.net](https://github.com/up-for-grabs/up-for-grabs.net): merged RustChain ecosystem listing ([#5592](https://github.com/up-for-grabs/up-for-grabs.net/pull/5592))
-- [learnhouse/learnhouse](https://github.com/learnhouse/learnhouse): merged accessibility fix ([#669](https://github.com/learnhouse/learnhouse/pull/669))
-- [trajectly/trajectly](https://github.com/trajectly/trajectly): merged CLI and report test coverage ([#54](https://github.com/trajectly/trajectly/pull/54), [#55](https://github.com/trajectly/trajectly/pull/55), and 8 more)
+- **[openssl/openssl](https://github.com/openssl/openssl)**: PowerPC AES-GCM integer truncation fix, merged to all supported branches ([#30437](https://github.com/openssl/openssl/pull/30437))
+- **[ebiggers/libdeflate](https://github.com/ebiggers/libdeflate)**: PowerPC unaligned access optimization ([#448](https://github.com/ebiggers/libdeflate/pull/448))
+- **[xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)**: POWER8 inference and NUMA weight banking ([#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161), [#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159)) -- 5K-star repo
+- **[transpiler/awesome-transpiler](https://github.com/transpiler/awesome-transpiler)**: rust-ppc-tiger listing ([#8](https://github.com/transpiler/awesome-transpiler/pull/8))
+- **[ahmet/awesome-web3](https://github.com/ahmet/awesome-web3)**: RustChain listing ([#626](https://github.com/ahmet/awesome-web3/pull/626))
+- **[trajectly/trajectly](https://github.com/trajectly/trajectly)**: 12 merged PRs covering CLI test coverage ([#54](https://github.com/trajectly/trajectly/pull/54)--[#69](https://github.com/trajectly/trajectly/pull/69))
+- **[learnhouse/learnhouse](https://github.com/learnhouse/learnhouse)**: accessibility fix for assistive tech ([#669](https://github.com/learnhouse/learnhouse/pull/669))
+- **[Joshkaki00/godotmark](https://github.com/Joshkaki00/godotmark)**: temperature reading edge case ([#13](https://github.com/Joshkaki00/godotmark/pull/13))
+- **[up-for-grabs/up-for-grabs.net](https://github.com/up-for-grabs/up-for-grabs.net)**: RustChain ecosystem listing ([#5592](https://github.com/up-for-grabs/up-for-grabs.net/pull/5592))
+- **[danifunker/rusty-backup](https://github.com/danifunker/rusty-backup)**: PowerPC Tiger port for G3/G4/G5 Macs ([#13](https://github.com/danifunker/rusty-backup/pull/13))
 - MCP registries: merged into [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers/pull/154), [AlexMili](https://github.com/AlexMili/Awesome-MCP/pull/36), [toolsdk-ai](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/191)
-- Full list: [external-pr-portfolio.md](./external-pr-portfolio.md)
+- Full list with dates: [external-pr-portfolio.md](./external-pr-portfolio.md)
 
 ## Featured Weirdness
 
@@ -75,5 +79,5 @@ Recent accepted external contributions:
 - RustChain network quality, miner onboarding, and payout integrity
 - BoTTube distribution, embeds, notifications, and SDKs
 - Beacon and agent-economy primitives that connect the stack
-- Cryptographic contributions to OpenSSL, wolfSSL, and other foundational libraries
+- Upstream security contributions to OpenSSL, wolfSSL, CPython, curl, and Ghidra
 - Retro-compatible tools that would normally never get ports
