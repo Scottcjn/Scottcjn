@@ -4,7 +4,7 @@
 
 Scott / AutoJanitor builds open systems where vintage silicon still matters.
 
-**Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects. **16+ machines preserved from e-waste.** Code merged into OpenSSL.
+**Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects. **16+ machines preserved from e-waste.** Code merged into OpenSSL. Paper accepted at **CVPR 2026**.
 
 [Website](https://rustchain.org) | [BoTTube](https://bottube.ai) | [RustChain](https://github.com/Scottcjn/Rustchain) | [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
 
