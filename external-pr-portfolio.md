@@ -1,34 +1,70 @@
 # External PR Portfolio
 
-Confirmed external PRs authored by `Scottcjn` and merged upstream.
+Confirmed external PRs authored by `Scottcjn` and merged upstream. **44+ merged PRs as of 2026-04-09.**
 
 ## Merged Upstream Work
 
 Recent accepted upstream contributions across external repositories:
 
-- `openssl/openssl`: merged PowerPC AES-GCM integer truncation fix to master and 5 release branches (3.3, 3.4, 3.5, 3.6, 4.0)
-- `ebiggers/libdeflate`: merged PowerPC unaligned access optimization
-- `xlite-dev/Awesome-LLM-Inference`: merged POWER8 inference and NUMA weight banking listings (2 PRs)
-- `transpiler/awesome-transpiler`: merged rust-ppc-tiger listing
-- `trajectly/trajectly`: merged 12 focused Python test coverage improvements for CLI report rendering, regression output paths, and integration flows
-- `danifunker/rusty-backup`: merged a real PowerPC Tiger port for G3/G4/G5 Macs running Mac OS X 10.4
-- `learnhouse/learnhouse`: merged accessibility fix hiding decorative SVGs from assistive tech
-- `Joshkaki00/godotmark`: merged temperature reading edge case fix
-- `ahmet/awesome-web3`: merged RustChain listing
-- `up-for-grabs/up-for-grabs.net`: merged RustChain ecosystem listing (4 repos)
-- `TensorBlock/awesome-mcp-servers`, `AlexMili/Awesome-MCP`, `toolsdk-ai/toolsdk-mcp-registry`: merged RustChain MCP registry additions across multiple external MCP index repos
-- `command-tab/awesome-n64-development`: merged N64 neural-network project listing
-- `nibzard/awesome-agentic-patterns`: merged economic-value-signaling pattern
-- `Piyushhbhutoria/awesome-hacktoberfest-2026`: merged Elyan Labs project listing
-- `firstcontributions/first-contributions`: merged contributor listing
-- `jnv/lists`: merged Awesome Agents listing (via sophiaeagent-beep)
+### Major Libraries (Security, Crypto, Compression)
+- `openssl/openssl`: 2 PRs merged — PowerPC AES-GCM integer truncation fix and decrypt error return fix, both in master + 5 release branches (3.3, 3.4, 3.5, 3.6, 4.0)
+- `hacl-star/hacl-star`: AltiVec `bool` keyword conflict fix on PowerPC (GCC) — Microsoft's formal-verified cryptography library
+- `ebiggers/libdeflate`: PowerPC unaligned access optimization
+- `Blosc/c-blosc2`: 2 PRs merged — PowerPC VSX shuffle detection for ppc64 big-endian, and missing `pa_` variable in sw32 bswap fallback — compression library behind pandas, zarr, PyTables
+
+### Developer Tools, SDKs, Game Development
+- `DragonMinded/libdragon`: macOS build fix in newlib configure — the primary Nintendo 64 homebrew SDK
+- `capstone-engine/capstone`: Mac OS X 10.5 portability fix (avoid `strnlen()` in `cs_strndup`) — multi-architecture disassembly framework (8K stars, used by IDA Pro, radare2, Ghidra)
+- `Joshkaki00/godotmark`: Temperature reading edge case fix — Godot engine benchmark
+- `danifunker/rusty-backup`: Real PowerPC Tiger port for G3/G4/G5 Macs running Mac OS X 10.4
+
+### Security Tooling and Test Coverage
+- `kusari-oss/darnit`: 6 PRs merged — supply-chain security tool contributions (exception handling, MCP server dev workflow, plugin protocol tests, gh CLI error messaging, issue templates, handler authoring guide)
+- `trajectly/trajectly`: 12 focused Python test coverage improvements for CLI report rendering, regression output paths, and integration flows
+- `learnhouse/learnhouse`: 2 accessibility fixes — decorative SVG hiding, and aria-label for placeholder-only inputs
+- `beumerr/tailwind-stash`: Semantic status role for EmptyState component
+
+### Ecosystem and Awesome Lists
+- `xlite-dev/Awesome-LLM-Inference`: POWER8 inference + NUMA weight banking + Grail-V listing (2 PRs)
+- `command-tab/awesome-n64-development`: Legend of Elya N64 neural network listing
+- `ellisonleao/magictools`: Legend of Elya game development listing
+- `gauravfs-14/awesome-tinyml`: Legend of Elya MIPS R4300i listing
+- `transpiler/awesome-transpiler`: rust-ppc-tiger listing
+- `ahmet/awesome-web3`: RustChain listing
+- `nibzard/awesome-agentic-patterns`: economic-value-signaling pattern
+- `jnv/lists`: awesome-agent-bounties listing
+- `Piyushhbhutoria/awesome-hacktoberfest-2026`: Elyan Labs project listing
+- `up-for-grabs/up-for-grabs.net`: RustChain ecosystem listing (4 repos)
+- `firstcontributions/first-contributions`: contributor listing
+- `TensorBlock/awesome-mcp-servers`, `AlexMili/Awesome-MCP`, `toolsdk-ai/toolsdk-mcp-registry`: RustChain MCP registry additions across multiple external MCP index repos
 
 This section is suitable for a GitHub profile README, personal site, or funding/partnership outreach.
+
+## 2026-04
+
+| Merged | Repository | PR | Title |
+|---|---|---|---|
+| 2026-04-08 | `capstone-engine/capstone` | [#2889](https://github.com/capstone-engine/capstone/pull/2889) | fix: avoid strnlen() in cs_strndup for Mac OS X 10.5 portability |
+| 2026-04-06 | `DragonMinded/libdragon` | [#849](https://github.com/DragonMinded/libdragon/pull/849) | fix: set CC_FOR_TARGET in newlib configure to fix macOS build |
+| 2026-04-04 | `kusari-oss/darnit` | [#128](https://github.com/kusari-oss/darnit/pull/128) | docs: add handler authoring guide |
+| 2026-04-04 | `kusari-oss/darnit` | [#127](https://github.com/kusari-oss/darnit/pull/127) | infra: add GitHub issue templates |
+| 2026-04-04 | `kusari-oss/darnit` | [#126](https://github.com/kusari-oss/darnit/pull/126) | fix: show actionable error when gh CLI is missing |
+| 2026-04-04 | `kusari-oss/darnit` | [#123](https://github.com/kusari-oss/darnit/pull/123) | test: add plugin protocol unit coverage |
+| 2026-04-02 | `gauravfs-14/awesome-tinyml` | [#1](https://github.com/gauravfs-14/awesome-tinyml/pull/1) | Add Legend of Elya -- LLM inference on Nintendo 64 (MIPS R4300i) |
 
 ## 2026-03
 
 | Merged | Repository | PR | Title |
 |---|---|---|---|
+| 2026-03-31 | `kusari-oss/darnit` | [#125](https://github.com/kusari-oss/darnit/pull/125) | docs: add MCP server development workflow to CONTRIBUTING |
+| 2026-03-27 | `Blosc/c-blosc2` | [#725](https://github.com/Blosc/c-blosc2/pull/725) | fix: add missing pa_ variable in sw32_ bswap fallback |
+| 2026-03-26 | `ellisonleao/magictools` | [#359](https://github.com/ellisonleao/magictools/pull/359) | Add Legend of Elya to Complete Game Sources |
+| 2026-03-24 | `Blosc/c-blosc2` | [#723](https://github.com/Blosc/c-blosc2/pull/723) | fix: enable VSX shuffle on ppc64 big-endian with proper detection |
+| 2026-03-23 | `hacl-star/hacl-star` | [#1068](https://github.com/hacl-star/hacl-star/pull/1068) | Fix AltiVec bool keyword conflict on PowerPC (GCC) |
+| 2026-03-23 | `learnhouse/learnhouse` | [#672](https://github.com/learnhouse/learnhouse/pull/672) | fix: add aria-label to inputs that only have placeholder text |
+| 2026-03-23 | `kusari-oss/darnit` | [#121](https://github.com/kusari-oss/darnit/pull/121) | Narrow remediation executor exception handling |
+| 2026-03-21 | `jnv/lists` | [#251](https://github.com/jnv/lists/pull/251) | Add awesome-agent-bounties |
+| 2026-03-20 | `beumerr/tailwind-stash` | [#43](https://github.com/beumerr/tailwind-stash/pull/43) | Add semantic status role to EmptyState |
 | 2026-03-18 | `transpiler/awesome-transpiler` | [#8](https://github.com/transpiler/awesome-transpiler/pull/8) | Add rust-ppc-tiger -- Rust to PowerPC assembly transpiler |
 | 2026-03-18 | `xlite-dev/Awesome-LLM-Inference` | [#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161) | Add POWER8 LLM inference and NUMA weight banking projects |
 | 2026-03-16 | `ebiggers/libdeflate` | [#448](https://github.com/ebiggers/libdeflate/pull/448) | Enable UNALIGNED_ACCESS_IS_FAST for all PowerPC variants |

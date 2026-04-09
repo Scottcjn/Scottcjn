@@ -42,6 +42,7 @@ Security patches and performance work in libraries used by millions of systems w
 | --- | --- | --- | --- |
 | **OpenSSL** | [#30437](https://github.com/openssl/openssl/pull/30437) | Integer truncation in PowerPC AES-GCM (`int` to `size_t`) | **Merged to master + 5 release branches** |
 | **OpenSSL** | [#30452](https://github.com/openssl/openssl/pull/30452) | Incorrect error return in AES-GCM decrypt path | **Merged to master + 5 release branches** |
+| **hacl-star** | [#1068](https://github.com/hacl-star/hacl-star/pull/1068) | Fix AltiVec `bool` keyword conflict on PowerPC (GCC) — Microsoft formal-verified crypto library | **Merged** |
 | **libdeflate** | [#448](https://github.com/ebiggers/libdeflate/pull/448) | Enable UNALIGNED_ACCESS_IS_FAST for all PowerPC variants | **Merged** |
 | **CPython** | [#146118](https://github.com/python/cpython/pull/146118) | BLAKE2 SIMD128 on POWER8 via VSX intrinsics | In review (65K-star repo) |
 | **curl** | [#20984](https://github.com/curl/curl/pull/20984) | SHA-512/256 big-endian optimization | In review (36K-star repo) |
@@ -51,21 +52,56 @@ Security patches and performance work in libraries used by millions of systems w
 
 Also: [US Patent 10,579,974](https://patents.google.com/patent/US10579974) -- rapid transaction settlements in distributed digital asset networks.
 
+## Portability and Performance Contributions
+
+Merged work making widely-used libraries run correctly on vintage, big-endian, and non-x86 architectures:
+
+| Library | PR | Fix | Project Scale |
+| --- | --- | --- | --- |
+| **libdragon** | [#849](https://github.com/DragonMinded/libdragon/pull/849) | Set `CC_FOR_TARGET` in newlib configure to fix macOS build — N64 homebrew SDK | **Merged** — the primary N64 SDK |
+| **capstone** | [#2889](https://github.com/capstone-engine/capstone/pull/2889) | Avoid `strnlen()` in `cs_strndup` for Mac OS X 10.5 portability — multi-arch disassembly framework | **Merged** — 8K stars, used by IDA Pro, radare2, Ghidra |
+| **c-blosc2** | [#723](https://github.com/Blosc/c-blosc2/pull/723) | Enable VSX shuffle on ppc64 big-endian with proper detection | **Merged** — the compression lib behind pandas/zarr/PyTables |
+| **c-blosc2** | [#725](https://github.com/Blosc/c-blosc2/pull/725) | Add missing `pa_` variable in `sw32_` bswap fallback | **Merged** |
+| **libdeflate** | [#448](https://github.com/ebiggers/libdeflate/pull/448) | Enable UNALIGNED_ACCESS_IS_FAST for all PowerPC variants | **Merged** — fast zlib replacement |
+| **danifunker/rusty-backup** | [#13](https://github.com/danifunker/rusty-backup/pull/13) | PowerPC Tiger port for G3/G4/G5 Macs (Mac OS X 10.4) | **Merged** |
+
+These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8, Mac OS X 10.5, and N64 hardware — platforms where the bugs are real and the fixes are load-bearing.
+
 ## Merged Upstream Work
 
-30+ PRs merged into external repositories. Highlights:
+**44+ PRs merged** into external repositories across security, portability, developer tools, and ecosystem registries.
 
+### Major Libraries (Security, Crypto, Compression)
 - **[openssl/openssl](https://github.com/openssl/openssl)**: 2 PRs merged — PowerPC AES-GCM integer truncation fix ([#30437](https://github.com/openssl/openssl/pull/30437)) and decrypt error return fix ([#30452](https://github.com/openssl/openssl/pull/30452)), both in master + branches 3.3-4.0
+- **[hacl-star/hacl-star](https://github.com/hacl-star/hacl-star)**: AltiVec `bool` keyword conflict fix on PowerPC ([#1068](https://github.com/hacl-star/hacl-star/pull/1068)) — Microsoft's formal-verified cryptography library
 - **[ebiggers/libdeflate](https://github.com/ebiggers/libdeflate)**: PowerPC unaligned access optimization ([#448](https://github.com/ebiggers/libdeflate/pull/448))
-- **[xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)**: POWER8 inference and NUMA weight banking ([#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161), [#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159)) -- 5K-star repo
+- **[Blosc/c-blosc2](https://github.com/Blosc/c-blosc2)**: 2 PRs merged — PowerPC VSX shuffle detection ([#723](https://github.com/Blosc/c-blosc2/pull/723)) + bswap fallback fix ([#725](https://github.com/Blosc/c-blosc2/pull/725)) — compression library behind pandas, zarr, PyTables
+
+### Developer Tools, SDKs, and Game Development
+- **[DragonMinded/libdragon](https://github.com/DragonMinded/libdragon)**: macOS build fix for newlib configure ([#849](https://github.com/DragonMinded/libdragon/pull/849)) — the primary Nintendo 64 homebrew SDK
+- **[capstone-engine/capstone](https://github.com/capstone-engine/capstone)**: Mac OS X 10.5 portability fix ([#2889](https://github.com/capstone-engine/capstone/pull/2889)) — multi-architecture disassembly framework used by IDA Pro, radare2, Ghidra, 8K stars
+- **[Joshkaki00/godotmark](https://github.com/Joshkaki00/godotmark)**: Temperature reading edge case fix ([#13](https://github.com/Joshkaki00/godotmark/pull/13)) — Godot engine benchmark tool
+- **[danifunker/rusty-backup](https://github.com/danifunker/rusty-backup)**: PowerPC Tiger port for G3/G4/G5 Macs running Mac OS X 10.4 ([#13](https://github.com/danifunker/rusty-backup/pull/13))
+
+### Security Tooling and Test Coverage
+- **[kusari-oss/darnit](https://github.com/kusari-oss/darnit)**: 6 PRs merged — supply-chain security tool contributions including exception handling ([#121](https://github.com/kusari-oss/darnit/pull/121)), MCP server dev workflow docs ([#125](https://github.com/kusari-oss/darnit/pull/125)), plugin protocol unit tests ([#123](https://github.com/kusari-oss/darnit/pull/123)), gh CLI error messaging ([#126](https://github.com/kusari-oss/darnit/pull/126)), GitHub issue templates ([#127](https://github.com/kusari-oss/darnit/pull/127)), handler authoring guide ([#128](https://github.com/kusari-oss/darnit/pull/128))
+- **[trajectly/trajectly](https://github.com/trajectly/trajectly)**: 12 merged PRs covering CLI test coverage ([#54](https://github.com/trajectly/trajectly/pull/54)-[#69](https://github.com/trajectly/trajectly/pull/69))
+- **[learnhouse/learnhouse](https://github.com/learnhouse/learnhouse)**: 2 a11y fixes — decorative SVG hiding ([#669](https://github.com/learnhouse/learnhouse/pull/669)) + aria-label for placeholder-only inputs ([#672](https://github.com/learnhouse/learnhouse/pull/672))
+- **[beumerr/tailwind-stash](https://github.com/beumerr/tailwind-stash)**: Semantic status role for EmptyState component ([#43](https://github.com/beumerr/tailwind-stash/pull/43))
+
+### Ecosystem and Awesome Lists
+- **[xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)**: POWER8 inference + NUMA weight banking ([#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161)) + Grail-V non-bijunctive attention ([#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159)) — 5K-star repo
+- **[command-tab/awesome-n64-development](https://github.com/command-tab/awesome-n64-development)**: Legend of Elya N64 neural network listing ([#63](https://github.com/command-tab/awesome-n64-development/pull/63))
+- **[ellisonleao/magictools](https://github.com/ellisonleao/magictools)**: Legend of Elya game development listing ([#359](https://github.com/ellisonleao/magictools/pull/359))
+- **[gauravfs-14/awesome-tinyml](https://github.com/gauravfs-14/awesome-tinyml)**: Legend of Elya on MIPS R4300i ([#1](https://github.com/gauravfs-14/awesome-tinyml/pull/1))
 - **[transpiler/awesome-transpiler](https://github.com/transpiler/awesome-transpiler)**: rust-ppc-tiger listing ([#8](https://github.com/transpiler/awesome-transpiler/pull/8))
 - **[ahmet/awesome-web3](https://github.com/ahmet/awesome-web3)**: RustChain listing ([#626](https://github.com/ahmet/awesome-web3/pull/626))
-- **[trajectly/trajectly](https://github.com/trajectly/trajectly)**: 12 merged PRs covering CLI test coverage ([#54](https://github.com/trajectly/trajectly/pull/54)--[#69](https://github.com/trajectly/trajectly/pull/69))
-- **[learnhouse/learnhouse](https://github.com/learnhouse/learnhouse)**: accessibility fix for assistive tech ([#669](https://github.com/learnhouse/learnhouse/pull/669))
-- **[Joshkaki00/godotmark](https://github.com/Joshkaki00/godotmark)**: temperature reading edge case ([#13](https://github.com/Joshkaki00/godotmark/pull/13))
-- **[up-for-grabs/up-for-grabs.net](https://github.com/up-for-grabs/up-for-grabs.net)**: RustChain ecosystem listing ([#5592](https://github.com/up-for-grabs/up-for-grabs.net/pull/5592))
-- **[danifunker/rusty-backup](https://github.com/danifunker/rusty-backup)**: PowerPC Tiger port for G3/G4/G5 Macs ([#13](https://github.com/danifunker/rusty-backup/pull/13))
-- MCP registries: merged into [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers/pull/154), [AlexMili](https://github.com/AlexMili/Awesome-MCP/pull/36), [toolsdk-ai](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/191)
+- **[nibzard/awesome-agentic-patterns](https://github.com/nibzard/awesome-agentic-patterns)**: economic-value-signaling pattern ([#25](https://github.com/nibzard/awesome-agentic-patterns/pull/25))
+- **[jnv/lists](https://github.com/jnv/lists)**: awesome-agent-bounties listing ([#251](https://github.com/jnv/lists/pull/251))
+- **[Piyushhbhutoria/awesome-hacktoberfest-2026](https://github.com/Piyushhbhutoria/awesome-hacktoberfest-2026)**: Elyan Labs project listing ([#21](https://github.com/Piyushhbhutoria/awesome-hacktoberfest-2026/pull/21))
+- **[up-for-grabs/up-for-grabs.net](https://github.com/up-for-grabs/up-for-grabs.net)**: RustChain ecosystem listing, 4 repos ([#5592](https://github.com/up-for-grabs/up-for-grabs.net/pull/5592))
+- **[firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions)**: Contributor listing ([#113035](https://github.com/firstcontributions/first-contributions/pull/113035))
+- **MCP registries**: merged into [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers/pull/154), [AlexMili](https://github.com/AlexMili/Awesome-MCP/pull/36), [toolsdk-ai](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/191)
 - Full list with dates: [external-pr-portfolio.md](./external-pr-portfolio.md)
 
 ## Featured Weirdness
