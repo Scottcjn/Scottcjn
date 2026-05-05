@@ -4,7 +4,7 @@
 
 Scott / AutoJanitor builds open systems where vintage silicon still matters.
 
-**Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects. **16+ machines preserved from e-waste.** Code merged into OpenSSL. Paper accepted at **CVPR 2026**.
+**Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects. **16+ machines preserved from e-waste.** Code merged into OpenSSL. Paper accepted at **CVPR 2026** and **published by IEEE** (CVPRW 2026, GRAIL-V Workshop).
 
 [Website](https://rustchain.org) | [BoTTube](https://bottube.ai) | [RustChain](https://github.com/Scottcjn/Rustchain) | [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
 
@@ -50,7 +50,7 @@ Security patches and performance work in libraries used by millions of systems w
 | **vLLM** | [#35674](https://github.com/vllm-project/vllm/pull/35674) | IBM POWER8 (ppc64le) CPU backend support | In review (30K-star repo) |
 | **wolfSSL** | [#9932](https://github.com/wolfSSL/wolfssl/pull/9932) | POWER8 hardware AES via `vcipher`/`vcipherlast` (13-20x faster) | In review (CLA signed) |
 
-Also: [US Patent 10,579,974](https://patents.google.com/patent/US10579974) -- rapid transaction settlements in distributed digital asset networks.
+Patent collaboration: contributor on work related to [US Patent 10,579,974](https://patents.google.com/patent/US10579974) — rapid transaction settlements in distributed digital asset networks. Patent is owned by **Stephen Reed**; involvement is as collaborator, not as sole or original inventor.
 
 ## Portability and Performance Contributions
 
