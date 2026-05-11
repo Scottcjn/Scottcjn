@@ -8,7 +8,7 @@ Recent accepted upstream contributions across external repositories:
 
 ### Major Libraries (Security, Crypto, Compression)
 - `openssl/openssl`: 2 PRs merged — PowerPC AES-GCM integer truncation fix and decrypt error return fix, both in master + 5 release branches (3.3, 3.4, 3.5, 3.6, 4.0)
-- `hacl-star/hacl-star`: AltiVec `bool` keyword conflict fix on PowerPC (GCC) — Microsoft's formal-verified cryptography library
+- `hacl-star/hacl-star`: AltiVec `bool` keyword conflict fix on PowerPC (GCC) — Microsoft's formally verified cryptography library
 - `ebiggers/libdeflate`: PowerPC unaligned access optimization
 - `Blosc/c-blosc2`: 2 PRs merged — PowerPC VSX shuffle detection for ppc64 big-endian, and missing `pa_` variable in sw32 bswap fallback — compression library behind pandas, zarr, PyTables
 
