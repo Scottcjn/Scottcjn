@@ -69,7 +69,7 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 
 ## Merged Upstream Work
 
-**44+ PRs merged** into external repositories across security, portability, developer tools, and ecosystem registries.
+**47 PRs merged** into external repositories across 28 different upstream projects — security, portability, developer tools, and ecosystem registries.
 
 ### Major Libraries (Security, Crypto, Compression)
 - **[openssl/openssl](https://github.com/openssl/openssl)**: 2 PRs merged — PowerPC AES-GCM integer truncation fix ([#30437](https://github.com/openssl/openssl/pull/30437)) and decrypt error return fix ([#30452](https://github.com/openssl/openssl/pull/30452)), both in master + branches 3.3-4.0
@@ -78,6 +78,7 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 - **[Blosc/c-blosc2](https://github.com/Blosc/c-blosc2)**: 2 PRs merged — PowerPC VSX shuffle detection ([#723](https://github.com/Blosc/c-blosc2/pull/723)) + bswap fallback fix ([#725](https://github.com/Blosc/c-blosc2/pull/725)) — compression library behind pandas, zarr, PyTables
 
 ### Developer Tools, SDKs, and Game Development
+- **[fyne-io/fyne](https://github.com/fyne-io/fyne)**: Retain separator NSMenuItem to prevent crash on menu rebuild ([#6267](https://github.com/fyne-io/fyne/pull/6267)) — Go cross-platform GUI toolkit, 24K stars
 - **[DragonMinded/libdragon](https://github.com/DragonMinded/libdragon)**: macOS build fix for newlib configure ([#849](https://github.com/DragonMinded/libdragon/pull/849)) — the primary Nintendo 64 homebrew SDK
 - **[capstone-engine/capstone](https://github.com/capstone-engine/capstone)**: Mac OS X 10.5 portability fix ([#2889](https://github.com/capstone-engine/capstone/pull/2889)) — multi-architecture disassembly framework used by IDA Pro, radare2, Ghidra, 8K stars
 - **[Joshkaki00/godotmark](https://github.com/Joshkaki00/godotmark)**: Temperature reading edge case fix ([#13](https://github.com/Joshkaki00/godotmark/pull/13)) — Godot engine benchmark tool
@@ -91,6 +92,7 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 
 ### Ecosystem and Awesome Lists
 - **[xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)**: POWER8 inference + NUMA weight banking ([#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161)) + Grail-V non-bijunctive attention ([#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159)) — 5K-star repo
+- **[domargan/awesome-numa](https://github.com/domargan/awesome-numa)**: RAM Coffers — NUMA-aware weight banking for LLM inference ([#3](https://github.com/domargan/awesome-numa/pull/3))
 - **[command-tab/awesome-n64-development](https://github.com/command-tab/awesome-n64-development)**: Legend of Elya N64 neural network listing ([#63](https://github.com/command-tab/awesome-n64-development/pull/63))
 - **[ellisonleao/magictools](https://github.com/ellisonleao/magictools)**: Legend of Elya game development listing ([#359](https://github.com/ellisonleao/magictools/pull/359))
 - **[gauravfs-14/awesome-tinyml](https://github.com/gauravfs-14/awesome-tinyml)**: Legend of Elya on MIPS R4300i ([#1](https://github.com/gauravfs-14/awesome-tinyml/pull/1))
