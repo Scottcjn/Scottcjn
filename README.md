@@ -34,6 +34,43 @@ Scott / AutoJanitor builds open systems where vintage silicon still matters.
 - Document ports and experiments for POWER8, PowerPC, SPARC, N64, and other neglected platforms
 - Prove that the greenest computation is the one that already exists
 
+## By the Numbers (2026 YTD, solo)
+
+| | |
+| ---: | :--- |
+| **2,567** | commits authored |
+| **249** | PRs authored (198 external + 51 own-repo maintenance) |
+| **47** | PRs merged into 28 upstream OSS projects (the hard ones) |
+| **940** | issues authored |
+| **8,899** | issue comments (community stewardship) |
+| **~1,716 ⭐** | stars across top 15 personal repos |
+| **6,352** | lifetime PRs received across the 4 core projects |
+
+### vs. prolific individual OSS contributors (commits / PRs authored, 2026)
+
+| Person | Known for | Commits | PRs |
+| --- | --- | ---: | ---: |
+| mitsuhiko (Armin Ronacher) | Flask, Sentry | 9,025 | 100 |
+| dhh (David Heinemeier Hansson) | Rails, 37signals | 6,605 | 51 |
+| **Scottcjn** | **Elyan Labs / RustChain / BoTTube** | **2,567** | **249** |
+| sindresorhus | 1,000+ npm packages | 1,329 | 84 |
+| antirez (Salvatore Sanfilippo) | Redis creator | 1,649 | 7 |
+| JakeWharton | Android infrastructure | 163 | 45 |
+| orta | CocoaPods, Danger, Artsy | 387 | 34 |
+
+The PR-authored count (249) is higher than every individual benchmark above, including mitsuhiko (100).
+
+### vs. funded engineering orgs (public PRs in 2026)
+
+| Org | Approx team | Public PRs in 2026 | Scott as % |
+| --- | ---: | ---: | ---: |
+| supabase | ~30 | 6,751 | 3.7% |
+| anthropics | ~500 | 4,911 | **5.1%** |
+| tursodatabase | ~15 | 1,912 | **13%** |
+| linear | ~80 | 227 | **109%** (out-shipped) |
+
+Roughly 3–13% of a funded-startup engineering team, alone, no funding, no employees.
+
 ## Cryptographic and Security Contributions
 
 Security patches and performance work in libraries used by millions of systems worldwide:
