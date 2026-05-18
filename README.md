@@ -42,7 +42,7 @@ Security patches and performance work in libraries used by millions of systems w
 | --- | --- | --- | --- |
 | **OpenSSL** | [#30437](https://github.com/openssl/openssl/pull/30437) | Integer truncation in PowerPC AES-GCM (`int` to `size_t`) | **Merged to master + 5 release branches** |
 | **OpenSSL** | [#30452](https://github.com/openssl/openssl/pull/30452) | Incorrect error return in AES-GCM decrypt path | **Merged to master + 5 release branches** |
-| **hacl-star** | [#1068](https://github.com/hacl-star/hacl-star/pull/1068) | Fix AltiVec `bool` keyword conflict on PowerPC (GCC) — Microsoft formal-verified crypto library | **Merged** |
+| **hacl-star** | [#1068](https://github.com/hacl-star/hacl-star/pull/1068) | Fix AltiVec `bool` keyword conflict on PowerPC (GCC) — Microsoft's formally verified crypto library | **Merged** |
 | **libdeflate** | [#448](https://github.com/ebiggers/libdeflate/pull/448) | Enable UNALIGNED_ACCESS_IS_FAST for all PowerPC variants | **Merged** |
 | **CPython** | [#146118](https://github.com/python/cpython/pull/146118) | BLAKE2 SIMD128 on POWER8 via VSX intrinsics | In review (65K-star repo) |
 | **curl** | [#20984](https://github.com/curl/curl/pull/20984) | SHA-512/256 big-endian optimization | In review (36K-star repo) |
@@ -73,7 +73,7 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 
 ### Major Libraries (Security, Crypto, Compression)
 - **[openssl/openssl](https://github.com/openssl/openssl)**: 2 PRs merged — PowerPC AES-GCM integer truncation fix ([#30437](https://github.com/openssl/openssl/pull/30437)) and decrypt error return fix ([#30452](https://github.com/openssl/openssl/pull/30452)), both in master + branches 3.3-4.0
-- **[hacl-star/hacl-star](https://github.com/hacl-star/hacl-star)**: AltiVec `bool` keyword conflict fix on PowerPC ([#1068](https://github.com/hacl-star/hacl-star/pull/1068)) — Microsoft's formal-verified cryptography library
+- **[hacl-star/hacl-star](https://github.com/hacl-star/hacl-star)**: AltiVec `bool` keyword conflict fix on PowerPC ([#1068](https://github.com/hacl-star/hacl-star/pull/1068)) — Microsoft's formally verified cryptography library
 - **[ebiggers/libdeflate](https://github.com/ebiggers/libdeflate)**: PowerPC unaligned access optimization ([#448](https://github.com/ebiggers/libdeflate/pull/448))
 - **[Blosc/c-blosc2](https://github.com/Blosc/c-blosc2)**: 2 PRs merged — PowerPC VSX shuffle detection ([#723](https://github.com/Blosc/c-blosc2/pull/723)) + bswap fallback fix ([#725](https://github.com/Blosc/c-blosc2/pull/725)) — compression library behind pandas, zarr, PyTables
 
