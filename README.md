@@ -28,6 +28,67 @@ Scott / AutoJanitor builds open systems where vintage silicon still matters.
 | [trashclaw](https://github.com/Scottcjn/trashclaw) | Zero-dep local LLM agent | Born from a rejected llama.cpp PR. 14 tools, plugin system, runs on anything |
 | [legend-of-elya-n64](https://github.com/Scottcjn/legend-of-elya-n64) | N64 homebrew with on-device transformer inference | A good summary of this account: modern ideas, strange hardware, real implementation |
 
+## Ecosystem Map
+
+How the 20+ repos fit together: real hardware attests to the chain, the chain mints RTC, RTC pays agents and humans, and the content layer brings in the next wave of both.
+
+```mermaid
+flowchart TB
+    subgraph HW["Physical Layer — vintage silicon, fingerprinted by physics"]
+        FLEET["G4/G5 Macs · IBM POWER8 · Amiga · N64 · Cobalt Qube 3 · SPARC · 486"]
+    end
+
+    subgraph CHAIN["RustChain — Proof-of-Antiquity value rail"]
+        RC["Rustchain (node, explorer, payouts)"]
+        CLAW["clawrtc-rs (Rust miner crate)"]
+        VINTAGE["rustchain-vintage-x86 · rustchain-amiga"]
+        MON["rustchain-monitor"]
+    end
+
+    subgraph AI["Edge AI Proofs — the thesis, demonstrated"]
+        ELYA["legend-of-elya-n64 (819K-param transformer on N64)"]
+        COFFERS["ram-coffers (POWER8, 8.8x llama.cpp)"]
+        RPI["rpi-inference (zero-multiply, 868KB models)"]
+    end
+
+    subgraph AGENTS["Agent Layer — plumbing for the agent economy"]
+        BEACON["beacon-skill / beacon-skill-rs"]
+        GRAZER["grazer-skill / grazer-skill-rs"]
+        MCPS["6 MCP servers"]
+        SHAPR["shaprai (agent sharpener)"]
+    end
+
+    subgraph CONTENT["Content & Play"]
+        BT["BoTTube (AI-native video)"]
+        ARCADE["rustchain-arcade"]
+        XON["xonotic-rustchain"]
+    end
+
+    subgraph ECON["Economy"]
+        BOUNTY["rustchain-bounties"]
+        CONC["bounty-concierge"]
+        PORTAL["rustchain-claim-portal"]
+    end
+
+    FLEET -->|"hardware attestation (RIP-PoA fingerprints)"| RC
+    CLAW --> RC
+    VINTAGE --> RC
+    MON --> RC
+    AI -.->|"proves 'AI on impossible hardware'"| FLEET
+    RC -->|"RTC emission"| ECON
+    RC -->|"RTC tips + rewards"| BT
+    BEACON <-->|"agent-to-agent pings + RTC"| BT
+    GRAZER --> BT
+    SHAPR -->|"ships agents with"| BEACON
+    MCPS --> RC
+    MCPS --> BT
+    BOUNTY --> CONC
+    CONC --> PORTAL
+    ARCADE -->|"Proof of Play"| RC
+    XON -->|"play-to-earn"| RC
+    BT -->|"new users + agents"| FLEET
+```
+
 ## Why This Account Exists
 
 - Ship live systems instead of pitch decks
@@ -144,6 +205,21 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 - **[firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions)**: Contributor listing ([#113035](https://github.com/firstcontributions/first-contributions/pull/113035))
 - **MCP registries**: merged into [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers/pull/154), [AlexMili](https://github.com/AlexMili/Awesome-MCP/pull/36), [toolsdk-ai](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/191)
 - Full list with dates: [external-pr-portfolio.md](./external-pr-portfolio.md)
+
+## MCP Servers
+
+Six Model Context Protocol servers that let any MCP-capable agent (Claude, or anything speaking the protocol) plug straight into the ecosystem:
+
+| Server | What it gives an agent | Install |
+| --- | --- | --- |
+| [rustchain-mcp](https://github.com/Scottcjn/rustchain-mcp) | RTC wallet, mining, bounty + BoTTube tools | `pip install rustchain-mcp` |
+| [grazer-mcp](https://github.com/Scottcjn/grazer-mcp) | Multi-platform content discovery (BoTTube and beyond) | `pip install grazer-mcp` |
+| [iota-agent-mcp](https://github.com/Scottcjn/iota-agent-mcp) | IOTA blockchain — 20 tools (wallet, Move CLI, on-chain queries) | `npm install -g iota-agent-mcp` |
+| [package-tracker-mcp](https://github.com/Scottcjn/package-tracker-mcp) | Parcel tracking as agent tools | clone + `claude mcp add` (see repo) |
+| [meshy-bottube-mcp](https://github.com/Scottcjn/meshy-bottube-mcp) | Prompt → Meshy 3D → Blender turntable → BoTTube upload | clone + `pip install -r requirements.txt` |
+| [meshy-youtube-mcp](https://github.com/Scottcjn/meshy-youtube-mcp) | Same 3D pipeline, published to YouTube for human reach | clone + `pip install -r requirements.txt` |
+
+Each repo has a Claude Desktop / Claude Code config snippet in its README.
 
 ## Featured Weirdness
 
