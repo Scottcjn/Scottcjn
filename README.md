@@ -231,6 +231,10 @@ Each repo has a Claude Desktop / Claude Code config snippet in its README.
 - [trashclaw](https://github.com/Scottcjn/trashclaw) - Zero-dep LLM agent with Boudreaux Rules, runs on Mac Pro trashcan
 - [oculink-gpu-bypass](https://github.com/Scottcjn/oculink-gpu-bypass) - GPU bypass work for POWER systems and PowerPC Macs
 
+## Monthly Changelog
+
+Sustained momentum, not sporadic bursts — one digest per month of what actually shipped: **[July 2026](changelogs/2026-07.md)**
+
 ## Licensing
 
 Three deliberate tiers so adopters never have to guess: **MIT** for libraries/SDKs/MCP servers (zero friction), **Apache-2.0** for RustChain core (patent grant), **AGPL-3.0** for platforms and inference engines (improvements come back). Full map: [LICENSING.md](LICENSING.md).
