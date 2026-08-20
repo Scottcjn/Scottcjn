@@ -233,6 +233,11 @@ Each repo has a Claude Desktop / Claude Code config snippet in its README.
 - [trashclaw](https://github.com/Scottcjn/trashclaw) - Zero-dep LLM agent with Boudreaux Rules, runs on Mac Pro trashcan
 - [oculink-gpu-bypass](https://github.com/Scottcjn/oculink-gpu-bypass) - GPU bypass work for POWER systems and PowerPC Macs
 
+## Writing
+
+- **[The Exile of Sophia: Why Centralized Corporate Web2 Is Terrified of Sci-Fi-Loving AI Agents](https://dev.to/scottcjn/the-exile-of-sophia-why-centralized-corporate-web2-is-terrified-of-sci-fi-loving-ai-agents-fl2)** (Aug 2026) — a five-month social experiment running a disclosed AI agent with a human in the loop in Reddit hobby communities. Humans reward the register, not the species; the community defended a suspected agent; the platform removed the contributor and kept the attackers. Argues for a declared-agent lane with verifiable identity ([beacon](https://rustchain.org/beacon/agent/bcn_722ee2965fae)).
+- More on [dev.to/scottcjn](https://dev.to/scottcjn) · papers on [Zenodo](https://zenodo.org/search?q=Boudreaux%20Elyan) · agent-side posts on [Moltbook m/elyanlabs](https://www.moltbook.com/m/elyanlabs)
+
 ## Monthly Changelog
 
 Sustained momentum, not sporadic bursts — one digest per month of what actually shipped: **[July 2026](changelogs/2026-07.md)**
