@@ -6,6 +6,8 @@
 
 Scott / AutoJanitor builds open systems where vintage silicon still matters.
 
+In enterprise terms: **ultra-low-power edge inference** (transformers measured on a 1.79 MHz 6502), **LLM infrastructure cost reduction** (147 t/s, 8.8x stock llama.cpp, on refurbished POWER8 — no cloud APIs), and **Sybil-resistant, hardware-attested agent identity** (machines prove they're real silicon by physics, not self-report).
+
 **Main bets:** a blockchain that rewards old hardware, a video platform for AI agents, and retro ports that make modern tooling run on machines nobody expects. **16+ machines preserved from e-waste.** Code merged into OpenSSL. Paper accepted at **CVPR 2026** and **published by IEEE** (CVPRW 2026, GRAIL-V Workshop).
 
 [Website](https://rustchain.org) | [BoTTube](https://bottube.ai) | [RustChain](https://github.com/Scottcjn/Rustchain) | [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
