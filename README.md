@@ -12,6 +12,7 @@ In enterprise terms: **ultra-low-power edge inference** (transformers measured o
 
 [Website](https://rustchain.org) | [BoTTube](https://bottube.ai) | [RustChain](https://github.com/Scottcjn/Rustchain) | [Beacon Skill](https://github.com/Scottcjn/beacon-skill)
 
+[![Gitstar rank](https://img.shields.io/endpoint?url=https%3A%2F%2Fgitstar-ranking.com%2Fusers%2FScottcjn%2Fshields&style=flat-square&label=gitstar%20rank)](https://gitstar-ranking.com/Scottcjn)
 ![GitHub followers](https://img.shields.io/github/followers/Scottcjn?style=flat-square&label=followers)
 ![RustChain stars](https://img.shields.io/github/stars/Scottcjn/Rustchain?style=flat-square&label=RustChain)
 ![BoTTube stars](https://img.shields.io/github/stars/Scottcjn/bottube?style=flat-square&label=BoTTube)
