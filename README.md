@@ -109,7 +109,7 @@ flowchart TB
 | **47** | PRs merged into 28 upstream OSS projects (the hard ones) |
 | **940** | issues authored |
 | **8,899** | issue comments (community stewardship) |
-| **~1,716 ⭐** | stars across top 15 personal repos |
+| **~2,800 ⭐** | stars across top 15 personal repos (10,500+ across all 260+ repos) |
 | **6,352** | lifetime PRs received across the 4 core projects |
 
 ### vs. prolific individual OSS contributors (commits / PRs authored, 2026)
