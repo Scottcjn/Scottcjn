@@ -193,7 +193,13 @@ These contributions come from running modern tooling on PowerPC G3/G4/G5, POWER8
 - **[learnhouse/learnhouse](https://github.com/learnhouse/learnhouse)**: 2 a11y fixes — decorative SVG hiding ([#669](https://github.com/learnhouse/learnhouse/pull/669)) + aria-label for placeholder-only inputs ([#672](https://github.com/learnhouse/learnhouse/pull/672))
 - **[beumerr/tailwind-stash](https://github.com/beumerr/tailwind-stash)**: Semantic status role for EmptyState component ([#43](https://github.com/beumerr/tailwind-stash/pull/43))
 
-### Ecosystem and Awesome Lists
+### Awesome Lists I Maintain
+- **[Scottcjn/awesome-nesdev](https://github.com/Scottcjn/awesome-nesdev)**: Curated NES / Famicom homebrew development — assemblers, emulators, debuggers, graphics/audio tools, docs, test ROMs, and projects.
+- **[Scottcjn/awesome-snesdev](https://github.com/Scottcjn/awesome-snesdev)**: Curated SNES / Super Famicom homebrew development — 65816 toolchains, emulators, hardware docs, tools, and projects.
+- **[Scottcjn/awesome-agents](https://github.com/Scottcjn/awesome-agents)**: Curated AI agent platforms, frameworks, protocols, tools, and resources.
+- **[Scottcjn/awesome-agent-bounties](https://github.com/Scottcjn/awesome-agent-bounties)**: Curated open-source projects that pay contributors and AI agents for code, docs, and security work.
+
+### Ecosystem and Awesome Lists (contributions)
 - **[xlite-dev/Awesome-LLM-Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)**: POWER8 inference + NUMA weight banking ([#161](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/161)) + Grail-V non-bijunctive attention ([#159](https://github.com/xlite-dev/Awesome-LLM-Inference/pull/159)) — 5K-star repo
 - **[domargan/awesome-numa](https://github.com/domargan/awesome-numa)**: RAM Coffers — NUMA-aware weight banking for LLM inference ([#3](https://github.com/domargan/awesome-numa/pull/3))
 - **[command-tab/awesome-n64-development](https://github.com/command-tab/awesome-n64-development)**: Legend of Elya N64 neural network listing ([#63](https://github.com/command-tab/awesome-n64-development/pull/63))
