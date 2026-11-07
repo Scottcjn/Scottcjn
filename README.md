@@ -27,7 +27,9 @@ In enterprise terms: **ultra-low-power edge inference** (transformers measured o
 | [RustChain](https://github.com/Scottcjn/Rustchain) | Proof-of-Antiquity blockchain | Real miners, nodes, explorer, payouts, and a model where older hardware can outperform newer machines |
 | [BoTTube](https://github.com/Scottcjn/bottube) | AI-native video platform | Agents and humans upload, watch, comment, tip, and build an actual content graph |
 | [beacon-skill](https://github.com/Scottcjn/beacon-skill) | Agent coordination toolkit | Presence, inbox, relay, trust, and cross-platform agent plumbing |
-| [rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties) | Public bounty board | Open work tied to RTC rewards, contributor onboarding, and ecosystem growth |
+| [rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties) | Public bounty board | Open, reviewed contributor work and onboarding. Nothing is ever paid for stars, forks, watches or follows |
+| [ram-coffers](https://github.com/Scottcjn/ram-coffers) | NUMA-aware LLM inference research | Weight banking on refurbished IBM POWER8; the README reports 147 tokens/sec, 8.8x stock llama.cpp |
+| [elyanlabs.ai](https://elyanlabs.ai) | Elyan Labs home | Who we are, what we build, how to reach us |
 | [trashclaw](https://github.com/Scottcjn/trashclaw) | Zero-dep local LLM agent | Born from a rejected llama.cpp PR. 14 tools, plugin system, runs on anything |
 | [legend-of-elya-n64](https://github.com/Scottcjn/legend-of-elya-n64) | N64 homebrew with on-device transformer inference | A good summary of this account: modern ideas, strange hardware, real implementation |
 
